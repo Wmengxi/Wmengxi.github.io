@@ -1,0 +1,289 @@
+<div ng-controller="housejutiCtrl">
+  <div id="guider"></div>
+  <div class="bigpic">
+    <div id="f1">
+      <img id="myImg1" src="img/house/f1.PNG" alt="客厅" style="width: 100%;height: 100%;">
+      <div id="myModal1" class="modal">
+        <span class="close">×</span>
+        <img class="modal-content" id="img01">
+        <div id="caption1"></div>
+      </div>
+    </div> 
+    <div id="f2">
+      <img id="myImg2" src="img/house/f3.PNG" alt="卧室" style="width: 100%;height: 100%;">
+      <div id="myModal2" class="modal">
+        <span class="close">×</span>
+        <img class="modal-content" id="img02">
+        <div id="caption2"></div>
+      </div>
+    </div>
+    <div id="f3">
+      <img id="myImg3" src="img/house/f2.PNG" alt="餐厅" style="width: 100%;height: 100%;">
+      <div id="myModal3" class="modal">
+        <span class="close">×</span>
+        <img class="modal-content" id="img03">
+        <div id="caption3"></div>
+      </div>
+    </div>
+  </div>
+  <div class="inform">
+    <div id="owner">
+      <img src="img/house/o.PNG" style="width: 100%;height: 100%;border-radius: 50%;">
+      <p style="font-size: 16px;text-align:center;line-height: 40px;"><strong>Susan</strong></p>
+    </div>
+    <div id="add">
+      <p><strong>XX地铁站步行5分钟房间</strong></p>
+      <p style="font-size: 16px;margin-left: 4px;margin-top: -10px;">朝阳区，北京，中国</p>
+      <i class="fa fa-star" style="color: yellow;margin-left: 160px;margin-top: -33px;"></i>
+      <i class="fa fa-star" style="color: yellow;margin-left: 190px;margin-top: -33px;"></i>
+      <i class="fa fa-star" style="color: yellow;margin-left: 220px;margin-top: -33px;"></i>
+      <i class="fa fa-star" style="color: yellow;margin-left: 250px;margin-top: -33px;"></i>
+      <img src="img/house/m1.PNG" style="margin-left: 20px;">
+      <img src="img/house/m2.PNG" style="margin-left: -3px;">
+      <img src="img/house/m3.PNG" style="margin-left: -22px;">
+      <img src="img/house/m4.PNG">
+    </div>
+  </div>
+  <div class="reservation">
+    <div id="blank1">
+      <p style="font-size: 28px;color: white;text-align: center;line-height: 60px;">￥120/每晚</p>
+    </div>
+    <div id="blank2">
+      <input type="text" id="live_start" style="margin-left: 25px;margin-top: 3px;width: 25%;height: 20%; font-size: 16px;text-align: center; border: 1px solid gray;" placeholder="入住时间">
+      <input type="text" id="live_end" style="margin-left: 20px;margin-top: 20px;width: 25%;height: 20%; font-size: 16px;text-align: center; border: 1px solid gray;" placeholder="退房时间">
+      <select id="r_num">
+        <option value="" selected="selected">1位房客</option>
+        <option value="">2位房客</option>
+        <option value="">3位房客</option>
+        <option value="">4位房客</option>
+        <option value="">5位房客</option>
+        <option value="">5+位房客</option>
+      </select>
+      <button type="button" id="r_reserve">
+        <p>申请预订</p>
+      </button>
+    </div>
+  </div>
+  <div class="save">  
+    <button type="button" id="save1">
+      <p>保存到心愿单</p>
+      <i class="fa fa-heart"></i>
+    </button>
+    <div class="s_share">
+      <button type="button" id="s_share1">
+        <p>微信</p>
+      </button>
+      <button type="button" id="s_share2">
+        <p>微博</p>
+      </button>
+      <button type="button" id="s_share3">
+        <p>更多...</p>
+      </button>
+      <i class="fa fa-flag fa-2x">&nbsp;
+        <a href="#" style="float: right; font-size: 14px; color: grey;">
+          <p style="position: absolute; top: 5px; width: 70px;">举报此房源</p>
+        </a>
+      </i>        
+    </div> 
+    <div id="more">
+      <a href="#" style="color:grey;">
+        <p style="float: left;margin-left:30px;margin-top:10px;font-size: 18px;">QQ空间</p>
+      </a>
+      <a href="#" style="color:grey;">
+        <p style="float: left;margin-left:30px;font-size: 18px;">电子邮件</p>
+      </a>
+      <a href="#" style="color:grey;">
+        <p style="float: left;margin-left:25px;font-size: 18px;">嵌入此房源</p>
+      </a>
+    </div>   
+  </div> 
+  <div class="about">
+    <div id="about1">
+      <div class="font-face">
+        <div id="aw">
+          <p>关于此房源</p>
+        </div>
+        <div id="aw_1">
+          <p>从XX站步行至公寓只需要5分钟！非常近！！</p>
+          <p style="position: relative; top: -5px;">房间的眺望非常好！</p>
+          <p style="position: relative; top: -10px;">房间的设置非常简介！</p>
+          <p style="position: relative; top: -15px;">公寓有电梯!</p>
+          <a href="#" style="color: red;">
+            <p style="position: relative; top: -15px; font-weight: bold;">联系房东</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="about2">
+      <div class="font-face">
+        <div id="aw1">
+          <p>房源</p>
+        </div>
+        <div id="aw1_1">
+          <p>可住：<strong>3</strong></p>
+          <p style="margin-top: -10px;">卫生间：<strong>1</strong></p>
+          <p style="margin-top: -10px;">卧室：<strong>1</strong></p>
+          <p style="margin-top: -10px;">床位：<strong>3</strong></p>
+          <p style="margin-left: 200px; margin-top: -100px;">入住时间：<strong>15:00后的任何时间</strong></p>
+          <p style="margin-left: 200px; margin-top: -10px;">退房时间：<strong>11：00</strong></p>
+          <p style="margin-left: 200px; margin-top: -10px;">房源类型：<strong>公寓</strong></p>
+          <p style="margin-left: 200px; margin-top: -10px;">房间类型：<strong>整套房子/公寓</strong></p>
+          <a href="#" style="color: red;"><p ><strong>《房屋守则》</strong></p></a>
+        </div>
+      </div>
+    </div>
+    <div id="about3">
+      <div class="font-face">
+        <div id="aw1">
+          <p>便利设施</p>
+        </div>
+        <div id="aw2_1">
+          <i class="fa fa-beer"><span class="font-face">&nbsp;厨房</span></i>      
+          <i class="fa fa-rss"><span class="font-face">&nbsp;无线网络</span></i> 
+          <i class="fa fa-desktop"><span class="font-face">&nbsp;台式电脑</span></i> 
+          <i class="fa fa-trash"><span class="font-face">&nbsp;生活用品</span></i>
+          <i class="fa fa-photo"><span class="font-face">&nbsp;当地地图</span></i> 
+          <i class="fa fa-wrench"><span class="font-face">&nbsp;修理器具</span></i> 
+          <a href="#" style="color: red;">
+            <p style="margin-left: 235px;margin-top: 50px;"><strong>更多内容</strong></p>
+          </a>             
+        </div>
+      </div>
+    </div>
+    <div id="about4">
+      <div class="font-face">
+        <div id="aw1">
+          <p>价格</p>
+        </div>
+        <div id="aw3_1">
+          <p>额外人员：<strong>无需付费</strong></p>
+          <p style="margin-top: -10px;">清洁费：<strong>￥40</strong></p>
+          <p style="margin-top: -10px;">每周折扣：<strong>5%</strong></p>
+          <p style="margin-left: 200px; margin-top: -75px;">每月折扣：<strong>10%</strong></p>
+          <p style="margin-left: 200px; margin-top: -10px;">退订政策：
+            <a href="#" style="color: red;"><strong>适中</strong></a>
+          </p>
+        </div>
+      </div>  
+    </div>
+    <div id="about5">
+      <div class="font-face">
+        <div id="aw1">
+          <p>描述</p>
+        </div>
+        <div id="aw4_1">
+          <p><strong>房源</strong></p>
+          <i class="fa fa-star" ><span class="font-face">关于wifi</span></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star" style="margin-left: -106px; margin-top: 31px;">
+            <span class="font-face">安装有室内wifi</span>
+          </i>
+          <i class="fa fa-star" style="margin-left: -143px; margin-top: 53px;">
+            <span class="font-face">提供携带wifi</span>
+          </i>
+          <p class="font-face" style="margin-left: 200px;">---构造---</p>
+          <i class="fa fa-star" style="margin-left: 55px; margin-top: -5px;">
+            <span class="font-face">卧室 1</span>
+          </i>
+          <i class="fa fa-star" style="margin-left: -71px;margin-top: 20px;">
+            <span class="font-face">厨房 1</span>
+          </i>
+          <i class="fa fa-star" style="margin-left: -71px;margin-top: 45px;">
+            <span class="font-face">浴室 1 & 卫生间 1</span>
+          </i>
+          <i class="fa fa-star" style="margin-left: -170px;margin-top: 70px;">
+            <span class="font-face">阳台 1</span>
+          </i>
+          <p class="font-face" style="margin-left: 400px;margin-top: -35px;">---关于床---</p>
+          <i class="fa fa-star" style="margin-left: -15px;margin-top: -5px;">
+            <span class="font-face">1 上下床(单人) x1</span>
+          </i>
+          <i class="fa fa-star" style="margin-left: -170px;margin-top: 20px;">
+            <span class="font-face">2 沙发床 x1</span>
+          </i>
+          <a href="#" style="color: red;">
+            <p style="margin-left: 360px;margin-top: 100px;"><strong>更多内容</strong></p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="about6">
+      <div class="font-face">
+        <div id="aw1">
+          <p>《房屋守则》</p>
+        </div>
+        <div id="aw5_1">
+          <p>禁止吸烟</p>
+          <p>不适合宠物</p>
+          <p>不允许举办聚会和活动</p>
+          <p>入住时间是15：00后</p>
+          <p style="margin-left: 240px;margin-top: -138px;">!夜晚保持安静！</p>
+          <p style="margin-left: 240px;">!享受您的居住时光！</p>
+          <p style="margin-left: 240px;">!入住时间15：00--20：00！</p>
+          <p style="margin-left: 240px;">!我们将在公寓一楼给您配钥匙！</p>
+          <p style="margin-left: 240px;">!请配合我们保持联络！</p>
+          <a href="#" class="font-face" style="color: red;">
+            <p style="margin-left: 360px;margin-top: -10px;"><strong>更多内容</strong></p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="about7">
+      <div class="font-face">
+        <div id="aw1">
+          <p>安全设施</p>
+        </div>
+        <div id="aw6_1">
+          <p>烟雾报警器</p>
+          <p>一氧化碳报警器</p>
+          <p>安全卡</p>
+        </div>
+      </div>
+    </div>
+    <div id="about8">
+      <div class="font-face">
+        <div id="aw1">
+          <p>可租状态</p>
+        </div>
+        <div id="aw7_1">
+          <p>最少住宿天数<strong>3晚</strong></p>
+          <a href="#" style="color: red;">
+            <p style="margin-left: 350px;margin-top: -30px;"><strong>查看日历</strong></p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="d1">
+      <img src="img/house/d1.PNG" style="width: 100%; height: 100%;">
+    </div>
+    <div id="d2">
+      <img src="img/house/d2.PNG" style="width: 100%; height: 100%;">
+    </div>
+    <div id="d3">
+      <img src="img/house/d3.PNG" style="width: 100%; height: 100%;">
+    </div>
+    <div id="d4">
+      <img src="img/house/d4.PNG" style="width: 100%; height: 100%;">
+      <div class="center">查看所有9张图片</div>
+    </div>
+  </div>
+  <div class="eval">
+    <p style="text-align: center; font-size: 24px;"><strong>尚未收到评价</strong></p>
+    <p style="text-align: center;font-size: 18px;">入住此房源，您可以为房东撰写他们的第一条评价!</p>
+  </div>
+  <div class="deta">
+    <div id="portrait">
+      <img src="img/house/o.PNG" style="width: 100%; height: 100%; border-radius: 50%;">
+    </div>
+    <div id="od">
+      <p class="font-face" style="font-size: 28px;">Susan</p>
+      <p class="font-face" style="font-size: 20px;">CN&nbsp;.&nbsp;注册时间：2016年5月</p>
+      <i class="fa fa-square fa-3x">
+        <span id="in">2</span>
+        <span style="font-size: 20px;color: grey;">评价</span>
+      </i>
+      <button type="button" id="contact">联系房东</button>
+    </div>
+  </div>
+  <div id="map1"></div>
+</div>

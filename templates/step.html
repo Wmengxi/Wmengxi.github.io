@@ -1,0 +1,171 @@
+<div ng-controller="stepCtrl">
+	<div id="container" class="container-fluid">
+		<div style="background-color:#03899C;height: 70px;opacity: 0.7"></div>
+		<div style="background-color:#67c2d4;height: 1000px;">
+			<div class="mark">
+				<div class="hi-icon-wrap hi-icon-effect-6" id="star-rotate">
+					<a class="hi-icon hi-icon-star">Fav</a>
+				</div>
+				<div class="Box2-message">
+					<p style="color:gray;margin: 3%">我们会保护你的地址隐私</p>
+				</div>
+				<div class="Box3-message" >
+					<h1 style="font-weight: 700;color:black;font-size: 25px;margin-left: 3%">整套房子</h1>
+					<p style="color:gray;margin-left: 3%">房客租下了整套房子，包括旁边连带的一套单元。</p>
+					<h1 style="font-weight: 700;color:black;font-size: 25px;margin-left: 3%">独立房间</h1>
+					<p style="color:gray;margin-left: 3%">房客将会分享一些空间，但是他们会有自己独立的卧室。</p>
+					<h1 style="font-weight: 700;color:black;font-size: 25px;margin-left: 3%">合住房间</h1>
+					<p style="color:gray;margin-left: 3%;margin-bottom: 5%">房客没有自己的房间</p>
+				</div>
+			</div>
+			<div class="mp-pusher" id="mp-pusher" style="margin-top: -5%;">
+				<!--侧边栏 --><!-- mp-menu -->
+				<div id="mp-menu" class="mp-menu" >
+					<div class="mp-level" style="background-color: #FF5A60;">
+						<h2 class="icon icon-world">创建房源</h2>
+						<ul>
+							<li><a class="icon icon-globe" href="#">基本信息</a></li>
+							<li><a class="icon icon-camera" href="#">场景设置</a></li>
+							<li><a class="icon icon-heart" href="#">准备好接待房客</a></li>
+						</ul>
+						<h2>我的房源</h2>
+						<ul>
+							<li><a class="icon icon-cog" href="#">房源管理</a></li>
+							<li><a class="icon icon-user" href="#">您的预订</a></li>
+							<li><a class="icon icon-server" href="#">交易记录</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- 第一显示框 -->
+				<div class="Box2">
+
+					<span class="Size">您的房源位于何处？</span>
+					<p class="Size2">国家</p>
+					<select class="Styled-select Top2">
+						<option>选择国家</option>
+						<option>中国</option>
+						<option>美国</option>
+						<option>英国</option>
+						<option>法国</option>
+						<option>澳洲</option>
+						<option>新加坡</option>
+						<option>刚果</option>
+						<option>阿富汗</option>
+						<option>阿根廷</option>
+						<option>埃及</option>
+						<option>爱尔兰</option>
+						<option>安圭拉</option>
+						<option>奥地利</option>
+						<option>冰岛</option>
+						<option>比利时</option>
+						<option>波兰</option>
+					</select>
+					<!-- line2 -->
+					<p class="Size2">街道地址</p>
+					<form>
+						<p>
+							<input class="Styled-text Top2" style="color:#1F6B75;" type="text" value="房屋名称/号码+街/路" onfocus="if(value=='房屋名称/号码+街/路') {value='';style='color:#1F6B75'}" onblur="if (value=='') {value='房屋名称/号码+街/路';style='color:#1F6B75;'}"/>
+						</p>
+					</form>
+					<!-- line3 -->
+					<p class="Size2">公寓、套房、大厦(可选)</p>
+					<form>
+						<p>
+							<input class="Styled-text Top2" style="color:#1F6B75;" type="text" value="公寓、房号/进入大厦密码" onfocus="if(value=='公寓、房号/进入大厦密码') {value='';style='color:#1F6B75'}" onblur="if (value=='') {value='公寓、房号/进入大厦密码';style='color:#1F6B75;'}"/>
+						</p>
+					</form>
+					<!-- line4 -->
+					<div class="row">
+						<div class="scol-12">
+							<div class="row">
+								<div class="scol-6">
+									<p class="Size2">城市</p>
+									<form >
+										<p><input class="Styled-text2 Top2" style="color:#1F6B75;" type="text"/></p>
+									</form>
+								</div>
+								<div class="scol-6">
+									<p class="Size2" style="margin-left: 4%">洲</p>
+									<form >
+										<p><input class="Styled-text2 Top2" style="color:#1F6B75;margin-left: 4%" type="text"/></p>
+									</form>
+								</div>
+								<div class="scol-6">
+									<!-- line5 -->
+									<p class="Size2">邮政编码</p>
+									<form >
+										<p><input class="Styled-text2 Top2" style="color:#1F6B75;" type="text"/></p>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="Button1">
+						<span>下一步</span>
+					</button>
+				</div>
+				<!-- 第二显示框 -->
+				<div class="Box3" style="word-wrap:break-word;" style="margin-top: -200px">
+					<!-- line1 -->
+					<span class="Size">您发布的是什么样的房子？</span>
+					<!-- section> -->
+					<form class="ac-custom ac-radio ac-fill">
+						<ul>
+							<li><input id="r1" name="r1" type="radio"><label for="r1">整套房子</label></li>
+							<li><input id="r2" name="r1" type="radio"><label for="r2">独立房间</label></li>
+							<li><input id="r3" name="r1" type="radio"><label for="r3">合住房间</label></li>
+						</ul>
+					</form>
+					<!-- </section> -->
+					<!-- line2 -->
+					<p class="Size2">这是什么类型的房源</p>
+					<select class="Styled-select Top2">
+						<option>公寓</option>
+						<option>独立屋</option>
+						<option>住宿加早餐</option>
+						<option>阁楼</option>
+						<option>联排别墅</option>
+						<option>分契式公寓</option>
+						<option>小平房</option>
+						<option>小木屋</option>
+						<option>别墅</option>
+						<option>城堡</option>
+						<option>宿舍</option>
+						<option>树屋</option>
+						<option>船</option>
+						<option>飞机</option>
+						<option>露营车/房车</option>
+						<option>冰屋</option>
+						<option>灯塔</option>
+					</select>
+					<button class="Button1">
+						<span>下一步</span>
+					</button>
+				</div>
+			</div><!-- mp-pusher -->
+		</div>
+	</div><!-- /container -->
+	<!-- 导航 -->
+	<div class="morph-button morph-button-sidebar morph-button-fixed">
+		<button type="button" id="trigger"><span class="icon icon-cog">Settings Menu</span></button>
+		<div class="morph-content">
+			<div>
+				<div class="content-style-sidebar">
+					<span class="icon icon-close">Close the overlay</span>
+					<h2>创建房源</h2>
+					<ul>
+						<li><a class="icon icon-globe" href="#">基本信息</a></li>
+						<li><a class="icon icon-camera" href="#">场景设置</a></li>
+						<li><a class="icon icon-heart" href="#">准备好接待房客</a></li>
+					</ul>
+					<h2>我的房源</h2>
+					<ul>
+						<li><a class="icon icon-cog" href="#">房源管理</a></li>
+						<li><a class="icon icon-user" href="#">您的预订</a></li>
+						<li><a class="icon icon-server" href="#">交易记录</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div> <!-- morph-button-->
+</div>

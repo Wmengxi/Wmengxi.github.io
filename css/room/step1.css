@@ -1,0 +1,270 @@
+.container-fluid {
+	background: #67c2d4;
+	padding: 0;
+}
+.Canvas{
+	width: 100%;
+	height:1000px;
+	/*background-color: #F2F2F2;*/
+	background-color: #FF5A60;
+}
+.Box{
+	width: 100%;
+	height: 150px;
+	background-color: #01D1C1;
+}
+.Box2{
+	margin-left: 20%;
+	margin-top: 5%;
+	width: 60%;
+	height: 430px;
+	/*overflow: auto;*/
+}
+.Box3{
+	margin-left: 20%;
+	margin-top: 5%;
+	width: 60%;
+	height: 430px;
+	/*overflow: auto;*/
+}
+.Box2-message{
+	width: 100%;
+	float: right;
+	background-color: white;
+	margin-right: 3%;
+}
+.Box3-message{
+	width: 100%;
+	float: right;
+	background-color: white;
+	margin-right: 3%;
+	/*opacity: 0.8;*/
+}
+.Size, .Size2 {
+	color: white;
+}
+.mark{
+	float: right;
+	width: 19%;
+	background-color: #67c2d4;
+}
+.Button1{
+	background-color: #FF5A60;
+	width: 50%;
+	height: 60px;
+	margin-top: 50px;
+	font-weight: 700;
+	font-size: 20px;
+	color:white;
+	margin-left: 50%;
+}
+.Picture{
+	width: 100%;
+	height: 150px;
+}
+.Top{
+	margin-top: 30px;
+}
+.Top2{
+	margin-top: 1%;
+}
+/*.Left{
+	margin-left: 2%;
+}*/
+.Styled-select{
+	width: 99%;
+	height: 60px;
+	border:1px solid #ccc;
+	font-size: 20px;
+	font-weight: 700;
+	color:#1F6B75;
+	overflow: hidden;
+	background-color: #F2F2F2;
+	opacity: 0.7;
+	padding: 2%;
+}
+.Styled-text{
+	width: 99%;
+	height: 60px;
+	border:1px solid #ccc;
+	font-size: 20px;
+	font-weight:700;
+	background-color: #F2F2F2;
+	opacity: 0.7;
+	padding: 2%;
+}
+.Styled-text2{
+	float: left;
+	width: 94%;
+	height: 60px;
+	border:1px solid #ccc;
+	font-size: 20px;
+	font-weight:700;
+	background-color: #F2F2F2;
+	opacity: 0.7;
+	padding: 2%;
+}
+.Styled-li{
+	width: 99%;
+	height: 60px;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.Size{
+	font-size: 40px;
+	font-weight: 900;
+}
+.Size2{
+	font-weight: 700;
+	font-size: 20px;
+	margin-top: 3%;
+}
+*{
+	margin:0;
+	padding:0;
+}
+#star-rotate a:link {
+	text-decoration:none;
+}
+#star-rotate a:visited {
+	text-decoration:none;
+}
+#star-rotate a:hover {
+	text-decoration:none;
+}
+ul{list-style:none;}
+.menu_zzjs_net{
+	background:#01D1C1;
+	float:left;
+	padding-top:2px;
+	width:500%;
+}
+.menu_zzjs_net li{float:left;}
+.menu_zzjs_net li a{
+	display:block;
+	float:left;
+	color:#fff;
+	height:25px;
+	line-height:25px;
+	padding:0 5px;
+	margin-left:2px;
+	font-weight: 700;
+	font-size: 20px;
+}
+.menu_zzjs_net .this_zzjs a {
+	background:#fff;
+	color:#01D1C1;
+	font-weight: 700;
+	font-size: 20px;
+}
+.sub_zzjs{
+	clear:both;
+	/*border:2px solid #000;*/
+	border-right: 1px solid #01D1C1;
+	border-top:none;
+	background:#fff;
+	font-weight: 700;
+	color:gray;
+	width: 100%;
+	height: 490px;
+}
+.sub_zzjs ul{
+	display:none;
+	padding:15px;
+	line-height:180%;
+}
+.sub_zzjs li{
+	margin: 20%;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.scol-1,.scol-2,.scol-3,.scol-new3,.scol-4,.scol-5,.scol-6,.scol-7,.scol-8,.scol-9,.scol-10,.scol-11,.scol-12{
+  position: relative;
+  min-height: 1px;
+  padding: 0;
+}
+.scol-1,.scol-2,.scol-3,.scol-new3,.scol-4,.scol-5,.scol-6,.scol-7,.scol-8,.scol-9,.scol-10,.scol-11,.scol-12{
+  float: left;
+}
+.scol-12 {
+  width: 100%;
+}
+.scol-11 {
+  width: 91.66666667%;
+}
+.scol-10 {
+  width: 78%;
+}
+.scol-9 {
+  width: 75%;
+}
+.scol-8 {
+  width: 66.66666667%;
+}
+.scol-7 {
+  width: 58.33333333%;
+}
+.scol-6 {
+  width: 50%;
+}
+.scol-5 {
+  width: 41.66666667%;
+}
+.scol-4 {
+  width: 33.33333333%;
+}
+.scol-new3 {
+  width: 28%;
+}
+.scol-3 {
+  width: 20%;
+}
+.scol-2 {
+  width: 16.66666667%;
+}
+.scol-1 {
+  width: 8.33333333%;
+}
+  .scol-offset-12 {
+    margin-left: 100%;
+  }
+  .scol-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .scol-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .scol-offset-9 {
+    margin-left: 75%;
+  }
+  .scol-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .scol-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .scol-offset-6 {
+    margin-left: 50%;
+  }
+  .scol-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .scol-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .scol-offset-3 {
+    margin-left: 22%;
+  }
+  .scol-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .scol-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .scol-offset-0 {
+    margin-left: 0;
+  }

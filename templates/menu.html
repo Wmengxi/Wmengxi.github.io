@@ -1,0 +1,167 @@
+<!-- 导航栏 -->
+<nav class="navbar-home navbar-default navbar-static-top col-sm-12" role="navigation">
+	<div>
+		<ul class="nav navbar-nav col-sm-12">
+			<li class="col-sm-2">
+				<a ui-sref=".home" class="center" id="home"><i class="fa fa-home fa-fw font-white"></i>trekker</a>
+			</li>
+			<li class="col-sm-6"></li>
+			<li class="col-sm-1"><a class="center" ui-sref=".room">成为房东</a></li>
+			<li class="col-sm-1"><a class="center" ui-sref=".help">帮助</a></li>
+			<li class="col-sm-1"><a class="center" href="#" id="register-in">注册</a></li>
+			<li class="col-sm-1"><a class="center" href="#" id="login-in">登录</a></li>
+		</ul>
+	</div>
+</nav>
+<!-- 登录注册 -->
+<div ng-controller="registerCtrl">
+	<div>
+		<!-- 注册选择 -->
+		<div class="panel panel-default login">
+			<div class="panel-body">
+				<div class="text-center box-login" id="box-wechat">
+					<i class="fa fa-wechat fa-2x pull-left font-fa"></i>
+					<span class="font-login">通过微信注册</span>
+				</div>
+				<div class="text-center box-login" id="box-qq">
+					<i class="fa fa-qq fa-2x pull-left font-fa"></i>
+					<span class="font-login">通过qq注册</span>
+				</div>
+				<div class="text-center" style="color: gray">
+					<span>- - - - - - - - - - - - - - - - - - - - 或 - - - - - - - - - - - - - - - - - - - -</span>
+				</div>
+				<div class="text-center box-login" id="box-ID">
+					<span class="font-login">创建账号</span>
+				</div>
+				<div class="agree">
+					<span>注册即表示我同意Trekker的<a href="#">服务条款</a>、<a href="#">支付服务条款</a>、<a href="#">隐私政策</a>、<a href="#">房客退款政策</a>和<a href="#">房东保障金计划条款</a>。</span>
+				</div>
+				<div class="footer-login">
+					<span>已经是Trekker会员？</span>
+					<button class="btn btn-default pull-right btn-landing">登陆</button>
+				</div>
+			</div>
+		</div>
+		<!-- 微信登陆 -->
+		<div class="text-center" id="weixin">
+			<h3 style="color: white; padding: 10px;">微信登陆</h3>
+			<img src="img/register/weixin.jpg" />
+			<div class="block">请使用微信扫描二维码登录“Trekker”</div>
+		</div>
+		<!-- qq登陆 -->
+		<div class="text-center" id="qq">
+			<h3 style="color: white; padding: 10px;">qq登陆</h3>
+			<img src="img/register/qq.jpg" />
+			<div class="block">请使用qq扫描二维码登录“Trekker”</div>
+		</div>
+		<!-- 创建账户 -->
+		<div class="panel panel-default" id="build-new">
+			<div class="panel-body">
+				<h3 class="build-phone">用电话号码注册</h3>
+				<h3 class="build-email">通过邮箱注册</h3>
+				<span>
+					<a href="#" id="use-email">改用邮箱</a>
+					<a href="#" id="use-phone">改用电话号码</a>
+					<strong>.</strong>
+					<a href="#" class="else-way">使用其他方式</a>
+				</span>
+				<form class="form-horizontal" role="form" style="margin-top: 10px">
+					<div class="form-group has-feedback">
+						<div class="col-md-12">
+							<i></i>
+							<span class="glyphicon glyphicon-user form-control-feedback" style="line-height: 40px"></span>
+							<input type="text" class="form-control" id="name" name="name" placeholder="用户名"
+							style="height: 40px">
+						</div>
+					</div>
+					<div class="form-group has-feedback">
+						<div class="col-md-12">
+							<i></i>
+							<span class="glyphicon glyphicon-earphone form-control-feedback" style="line-height: 40px"></span>
+							<input type="text" class="form-control build-phone" name="name" placeholder="电话号码" style="height: 40px">
+							<input type="email" class="form-control build-email" name="name" placeholder="电子邮箱地址" style="height: 40px">
+						</div>
+					</div>
+					<div class="form-group has-feedback">
+						<div class="col-md-12">
+							<i></i>
+							<span class="glyphicon glyphicon-lock form-control-feedback" style="line-height: 40px"></span>
+							<input type="password" class="form-control" id="password" name="password" placeholder="密码" style="height: 40px">
+						</div>
+					</div>
+					<div class="form-group has-feedback">
+						<div class="col-md-12">
+							<i></i>
+							<span class="glyphicon glyphicon-calendar form-control-feedback" style="line-height: 40px"></span>
+							<input type="text" class="form-control" id="datetimepicker-birthday" name="birthday" placeholder="生日" style="height: 40px">
+						</div>
+					</div>
+					<span>注册即表示我同意Trekker的<a href="#">服务条款</a>、<a href="#">支付服务条款</a>、<a href="#">隐私政策</a>、<a href="#">房客退款政策</a>和<a href="#">房东保障金计划条款</a>。</span>
+				</form>
+				<div class="text-center box-login login-phone">
+					<span class="font-login">注册</span>
+				</div>
+				<div class="footer-login">
+					<span>已经是Trekker会员？</span>
+					<button class="btn btn-default pull-right btn-landing">登陆</button>
+				</div>
+			</div>
+		</div>
+		<!-- 登陆 -->
+		<div class="panel panel-default landing">
+			<div class="panel-body">
+				<div class="text-center box-login" id="landing-wechat">
+					<i class="fa fa-wechat fa-2x pull-left font-fa"></i>
+					<span class="font-login">通过微信登录</span>
+				</div>
+				<div class="text-center box-login" id="landing-qq">
+					<i class="fa fa-qq fa-2x pull-left font-fa"></i>
+					<span class="font-login">通过qq登录</span>
+				</div>
+				<div class="text-center" style="color: gray">
+					<span>- - - - - - - - - - - - - - - - - - - - 或 - - - - - - - - - - - - - - - - - - - -</span>
+				</div>
+				<form class="form-horizontal" role="form" style="margin-top: 10px">
+					<div class="form-group has-feedback">
+						<div class="col-md-12">
+							<i></i>
+							<span class="glyphicon glyphicon-envelope form-control-feedback" style="line-height: 50px"></span>
+							<input type="email" class="form-control" id="input-email" name="name" placeholder="电子邮箱地址" style="height: 50px">
+							<input type="text" class="form-control" id="input-phone" name="name" placeholder="电话号码" style="height: 50px">
+						</div>
+					</div>
+					<div class="form-group has-feedback">
+						<div class="col-md-12">
+							<i></i>
+							<span class="glyphicon glyphicon-lock form-control-feedback" style="line-height: 50px"></span>
+							<input type="password" class="form-control" id="password" name="password" placeholder="密码" style="height: 50px">
+						</div>
+					</div>
+					<div class="checkbox" style="margin-bottom: 10px">
+						<input type="checkbox" id="checkbox-1-1" class="regular-checkbox" />
+						<label for="checkbox-1-1"></label>
+						<div  style="margin: -25px 0 0 30px"><span>自动登录</span></div>
+					</div> 
+					<span>
+						<a href="#" id="change-phone">改用电话号码</a>
+						<a href="#" id="change-email">改用邮箱</a>
+						<strong>.</strong>
+						<a href="#" class="else-way">忘记密码</a>
+					</span>
+				</form>
+				<div class="text-center box-login login-phone">
+					<span class="font-login">登录</span>
+				</div>
+				<div class="footer-login change-login">
+					<span>还没有账号？</span>
+					<button class="btn btn-default pull-right btn-login">注册</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hide-bg"></div>
+</div>
+
+<div>
+	<div ui-view=""/>
+</div>

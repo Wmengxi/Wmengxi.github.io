@@ -1,0 +1,166 @@
+.hide-bg {
+    position: absolute;
+    display: none;
+    height: 1200px;
+	width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.login {
+	position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    display: none;
+    width: 450px;
+    height: 430px;
+    margin: -215px 0 0 -225px;
+    padding: 20px;
+    z-index: 8;
+}
+.box-login {
+	border-radius: 3px;
+	padding: 15px;
+	opacity: 0.7;
+}
+.box-login:hover {
+	border-radius: 3px;
+	padding: 15px;
+	opacity: 1.0;
+}
+#box-wechat { background: #00CC33; }
+#landing-wechat { background: #00CC33; }
+#landing-wechat2 { background: #00CC33; }
+#box-qq { 
+	margin: 15px 0 15px 0;
+	background: #D80000;
+}
+#landing-qq { 
+    margin: 15px 0 15px 0;
+    background: #D80000;
+}
+#landing-qq2 { 
+    margin: 15px 0 15px 0;
+    background: #D80000;
+}
+#box-ID {
+	margin: 20px 0 20px 0;
+ 	background: #E80000; 
+}
+.font-login {
+	color: white;
+	font: 1.2em "微软雅黑";
+}
+.font-fa {
+	color: white;
+}
+.agree {
+	margin-bottom: 20px;
+}
+.href-color {
+	color: red;
+}
+.footer-login {
+	border-top: 1px solid gray;
+	padding: 25px 0 0 0;
+}
+#weixin {
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    display: none;
+    width: 300px;
+    height: 360px;
+    margin: -260px 0 0 -150px;
+    opacity: 1.0;
+    z-index: 7;
+}
+#qq {
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    display: none;
+    width: 300px;
+    height: 360px;
+    margin: -260px 0 0 -150px;
+    opacity: 1.0;
+    z-index: 6;
+}
+.block {
+	width: 277px;
+	margin: 20px auto;
+	padding: 10px;
+	border: 1px solid gray;
+	border-radius: 50px;
+	background: #404040;
+	color: white;
+	font: bold 1.1em "微软雅黑";
+}
+#build-new {
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    display: none;
+    width: 420px;
+    height: 520px;
+    margin: -260px 0 0 -210px;
+    padding: 0 15px 15px 15px;
+    z-index: 5;
+}
+.login-phone {
+	margin: 10px 0 15px 0;
+	padding: 15px;
+	background: #E00000;	
+}
+
+.landing {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: none;
+    width: 450px;
+    height: 550px;
+    margin: -275px 0 0 -225px;
+    padding: 20px;
+    z-index: 4; 
+}
+
+label {
+    display: inline;
+}
+
+.regular-checkbox {
+    display: none;
+}
+
+.regular-checkbox + label {
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 9px;
+    margin-top: 5px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+}
+
+.regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,255,0,0.1);
+}
+
+.regular-checkbox:checked + label {
+    background-color: white;
+    border: 1px solid #adb8c0;
+    box-shadow: 0 1px 2px rgba(0,255,0,0.05), inset 0px -15px 10px -12px rgba(0,255,0,0.05), inset 15px 10px -12px rgba(0,0,255,0.1);
+    color: #99a1a7;
+}
+
+.regular-checkbox:checked + label:after {
+    content: '\2714';
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    color: green;
+}
+

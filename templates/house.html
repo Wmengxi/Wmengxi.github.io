@@ -1,0 +1,214 @@
+<div id="map" ng-controller="mapCtrl"></div>
+<div id="guider"></div>
+<div class="message" ng-controller="houseCtrl">
+	<div id="data">
+  	<div class="contain1">
+    	<p>
+        <strong class="pull-left">日期</strong>  	
+    		<label style="margin-left: 65px;" class="pull-left">入住</label>
+        <input type="text" class="form-control pull-left" id="datetimepicker-house-from" style="margin-top: 5px;margin-left: 5px;margin-right: 5px;width: 20%;font-size: 20px;text-align: center; border: 1px solid gray;">
+        <label class="pull-left">退房</label>
+        <input type="text" class="form-control pull-left" id="datetimepicker-house-to" style="margin-top: 5px;margin-left: 5px;margin-right: 5px;width: 20%;font-size: 20px;text-align: center; border: 1px solid gray;">
+        <select class="form-control" id="num" style="height: 35px;margin-top: 10px;">
+          <option value="" selected="selected">1位房客</option>
+          <option value="">2位房客</option>
+          <option value="">3位房客</option>
+          <option value="">4位房客</option>
+          <option value="">5位房客</option>
+          <option value="">5+位房客</option>
+        </select>
+      </p>
+  	</div>
+  </div>
+	<div id="type">
+		<div class="contain1" style="line-height: 60px;">
+  		<p><strong>房间类型</strong>
+  		<div id="choose1">
+    		<div class="contain2">		
+      		<input type="checkbox" value="" />整套房子
+      		<div class="symbol">
+      		  <img src="img/house/1.PNG" />
+          </div>
+        </div>
+      </div>
+  		<div id="choose2">
+    		<div class="contain2">
+    		  <input type="checkbox" value="" />独立房间
+      		<div class="symbol">
+      		  <img src="img/house/2.PNG" />
+          </div>
+        </div>
+      </div>
+  		<div id="choose3">
+    		<div class="contain2">
+    		  <input type="checkbox" value="" />合住房间
+      		<div class="symbol">
+      		  <img src="img/house/3.PNG" />
+          </div>
+        </div>
+      </div>
+  		</p>
+	  </div>
+  </div>
+	<div id="price">
+		<div class="contain3">
+  		<p>
+        <label for="amount">价格范围</label>
+        <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold; margin-left: 30px;font-size: 14px;">
+      </p>
+      <div id="slider-range" style="margin-left: 220px;margin-top: -50px; width: 50%;"></div>
+    </div>
+  </div>	
+	<div id="pic">
+		<div class="btn-group">
+      <button type="button" class="btn btn-default" style="font-size: 16px;margin-left: 5px; margin-top: 10px;"><strong>筛选条件</strong>
+      </button>
+    </div>
+    <div class="font-face">
+      <p style="margin-left: 78%; margin-top: -4%;font-size: 16px; color: grey;">300+&nbsp;房源出租.北京</p>
+    </div>    
+    <p><i class="fa fa-bullhorn">&nbsp;输入日期查看完整的价格详情。需要收取额外费用。可能会加收税费。</i>
+    </p>
+    <div class="pic1">
+      <div id="houseCarousel" class="carousel slide">
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators">
+          <li data-target="#houseCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#houseCarousel" data-slide-to="1"></li>
+          <li data-target="#houseCarousel" data-slide-to="2"></li>
+          <li data-target="#houseCarousel" data-slide-to="3"></li>
+          <li data-target="#houseCarousel" data-slide-to="4"></li>
+        </ol>   
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="img" style="height: 100%;">
+              <img src="img/house/h1.PNG"  class="img-thumbnail" ui-sref="menu.housejuti">
+              <div class="carousel-caption"></div>
+              <div class="desc">4号线人民大学站50米</div>	
+            </div>
+          </div>
+          <div class="item">
+            <div class="img" style="height: 100%;">
+              <img src="img/house/h1.1.PNG" class="img-thumbnail" ui-sref="menu.housejuti">
+              <div class="carousel-caption"></div>
+              <div class="desc">4号线人民大学站50米</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img" style="height: 100%;">
+              <img src="img/house/h1.2.PNG" class="img-thumbnail" ui-sref="menu.housejuti">
+              <div class="carousel-caption"></div>
+              <div class="desc">4号线人民大学站50米</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img" style="height: 100%;">
+              <img src="img/house/h1.3.PNG" class="img-thumbnail" ui-sref="menu.housejuti">
+              <div class="carousel-caption"></div>
+              <div class="desc">4号线人民大学站50米</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img" style="height: 100%;">
+              <img src="img/house/h1.4.PNG" class="img-thumbnail" ui-sref="menu.housejuti">
+              <div class="carousel-caption"></div>
+              <div class="desc">4号线人民大学站50米</div>
+            </div>
+          </div>
+        </div>
+        <!-- 轮播（Carousel）导航 -->
+        <a class="carousel-control left" href="#/menu/house#houseCarousel" 
+          data-slide="prev">&lsaquo;
+        </a>
+        <a class="carousel-control right" href="#/menu/house#houseCarousel" 
+          data-slide="next">&rsaquo;
+        </a>
+      </div>
+    </div>       
+    <div class="pic2">
+      <div class="img">
+        <a href="http://www.baidu.com"  target="_blank">
+          <img src="img/house/h2.PNG" class="img-thumbnail">
+        </a>
+        <div class="desc">豪华公寓</div>
+      </div>
+    </div>       
+    <div class="pic3">
+      <div class="img">
+      	<img src="img/house/h3.PNG" class="img-thumbnail">
+      	<div class="desc">海淀学清路附近</div>
+      </div>
+    </div>
+    <div class="pic4">
+      <div class="img">
+      	<img src="img/house/h4.PNG" class="img-thumbnail">
+      	<div class="desc">皇城根边的一间干净卧室</div> 
+      </div>
+    </div>
+    <div class="pic3">
+      <div class="img">
+      	<img src="img/house/h5.PNG" class="img-thumbnail">
+      	<div class="desc">龙泽独立房间</div>
+      </div>
+    </div>
+    <div class="pic4">
+      <div class="img">
+      	<img src="img/house/h6.PNG" class="img-thumbnail">
+      	<div class="desc">中关村 五道口 768独立卧室</div>
+      </div>
+    </div>
+    <div class="pic3">
+      <div class="img">
+      	<img src="img/house/h7.PNG" class="img-thumbnail">
+      	<div class="desc">诚信酒店式家庭公寓</div>
+      </div>
+    </div>
+    <div class="pic4">
+      <div class="img">
+      	<img src="img/house/h8.PNG" class="img-thumbnail">
+      	<div class="desc">地铁旁的高档社区</div>
+      </div>
+    </div>
+    <div class="pic3">
+      <div class="img">
+      	<img src="img/house/h9.PNG" class="img-thumbnail">
+      	<div class="desc">紧靠五道口地铁站邂逅北京阳光</div>
+      </div>
+    </div>
+    <div class="pic4">
+      <div class="img">
+      	<img src="img/house/h10.PNG" class="img-thumbnail">
+      	<div class="desc">望京核心商区，高档整洁独立</div>
+      </div>
+    </div>
+    <ul class="pagination">
+      <li><a href="#">&laquo;</a></li>
+      <li><a class="active" href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">6</a></li>
+      <li><a href="#">7</a></li>
+      <li><a href="#">&raquo;</a></li>
+    </ul> 
+    <div class="font-face">
+      <p id="ins">1-18 共300+房源</p>
+    </div>
+    <div id="div"></div>
+    <div class="font-face1">
+    	<p id="ins1">北京更多的房源：</p>
+    	<div id="p1"><a href="#">公寓.</a></div>
+    	<div id="p2"><a href="#">别墅.</a></div>
+    	<div id="p3"><a href="#">阁楼.</a></div>
+    	<div id="p4"><a href="#">独立屋.</a></div>
+    	<div id="p5"><a href="#">住宿加早餐房源</a></div>
+    	<p id="ins1" style="top: 93%">人们还会住在：</p>
+    	<div id="p6"><a href="http://www.baidu.com" target="_blank">上海</a></div>
+    	<div id="p7"><a href="#">深圳</a></div>
+    	<div id="p8"><a href="#">云南</a></div>
+    	<p id="ins1" style="top: 95%">北京  中国 </p>
+    </div>
+  </div>
+</div>
